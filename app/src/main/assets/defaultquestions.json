@@ -1,0 +1,118 @@
+[
+  {
+    "question": "What is an .apk file?",
+    "answer": "Android application package file. Each Android application is compiled and packaged in a single file that includes all of the application's code (.dex files), resources, assets, and manifest file. The application package file can have any name but must use the .apk extension. "
+  },
+  {
+    "question": "What is a .dex file?",
+    "answer": "Compiled Android application code file. Android programs are compiled into .dex (Dalvik Executable) files, which are in turn zipped into a single .apk file on the device. .dex files can be created by automatically translating compiled applications written in the Java programming language."
+  },
+  {
+    "question": "What is an Action?",
+    "answer": "A description of something that an Intent sender wants done. An action is a string value assigned to an Intent. Action strings can be defined by Android or by a third-party developer. For example, android.intent.action.VIEW for a Web URL, or com.example.rumbler.SHAKE_PHONE for a custom application to vibrate the phone."
+  },
+  {
+    "question": "What is adb?",
+    "answer": "Android Debug Bridge, a command-line debugging application included with the SDK. It provides tools to browse the device, copy tools on the device, and forward ports for debugging. If you are developing in Android Studio, adb is integrated into your development environment. See Android Debug Bridge for more information."
+  },
+  {
+    "question": "What is an Application?",
+    "answer": "From a component perspective, an Android application consists of one or more activities, services, listeners, and intent receivers. From a source file perspective, an Android application consists of code, resources, assets, and a single manifest. During compilation, these files are packaged in a single file called an application package file (.apk)."
+  },
+  {
+    "question": "What is a Canvas?",
+    "answer": "A drawing surface that handles compositing of the actual bits against a Bitmap or Surface object. It has methods for standard computer drawing of bitmaps, lines, circles, rectangles, text, and so on, and is bound to a Bitmap or Surface. Canvas is the simplest, easiest way to draw 2D objects on the screen."
+  },
+  {
+    "question": "What is a Content Provider?",
+    "answer": "A data-abstraction layer that you can use to safely expose your application's data to other applications. A content provider is built on the ContentProvider class, which handles content query strings of a specific format to return data in a specific format. See Content Providers topic for more information."
+  },
+  {
+    "question": "What is Dalvik?",
+    "answer": "The Android platform's virtual machine. The Dalvik VM is an interpreter-only virtual machine that executes files in the Dalvik Executable (.dex) format, a format that is optimized for efficient storage and memory-mappable execution. The virtual machine is register-based, and it can run classes compiled by a Java language compiler that have been transformed into its native format using the included 'dx' tool. The VM runs on top of Posix-compliant operating systems, which it relies on for underlying functionality (such as threading and low level memory management). The Dalvik core class library is intended to provide a familiar development base for those used to programming with Java Standard Edition, but it is geared specifically to the needs of a small mobile device."
+  },
+  {
+    "question": "What is DDMS?",
+    "answer": "Dalvik Debug Monitor Service, a GUI debugging application included with the SDK. It provides screen capture, log dump, and process examination capabilities. If you are developing in Android Studio, DDMS is integrated into your development environment. See Using DDMS to learn more about the program."
+  },
+  {
+    "question": "What is a Dialog?",
+    "answer": "A floating window that acts as a lightweight form. A dialog can have button controls only and is intended to perform a simple action (such as button choice) and perhaps return a value. A dialog is not intended to persist in the history stack, contain complex layout, or perform complex actions. Android provides a default simple dialog for you with optional buttons, though you can define your own dialog layout. The base class for dialogs is Dialog."
+  },
+  {
+    "question": "What is a Drawable?",
+    "answer": "A compiled visual resource that can be used as a background, title, or other part of the screen. A drawable is typically loaded into another UI element, for example as a background image. A drawable is not able to receive events, but does assign various other properties such as 'state' and scheduling, to enable subclasses such as animation objects or image libraries. Many drawable objects are loaded from drawable resource files — xml or bitmap files that describe the image. Drawable resources are compiled into subclasses of android.graphics.drawable. For more information about drawables and other resources, see Resources."
+  },
+  {
+    "question": "What is an Intent?",
+    "answer": "An message object that you can use to launch or communicate with other applications/activities asynchronously. An Intent object is an instance of Intent. It includes several criteria fields that you can supply, to determine what application/activity receives the Intent and what the receiver does when handling the Intent. Available criteria include include the desired action, a category, a data string, the MIME type of the data, a handling class, and others. An application sends an Intent to the Android system, rather than sending it directly to another application/activity. The application can send the Intent to a single target application or it can send it as a broadcast, which can in turn be handled by multiple applications sequentially. The Android system is responsible for resolving the best-available receiver for each Intent, based on the criteria supplied in the Intent and the Intent Filters defined by other applications. For more information, see Intents and Intent Filters."
+  },
+  {
+    "question": "What is an Intent Filter?",
+    "answer": "A filter object that an application declares in its manifest file, to tell the system what types of Intents each of its components is willing to accept and with what criteria. Through an intent filter, an application can express interest in specific data types, Intent actions, URI formats, and so on. When resolving an Intent, the system evaluates all of the available intent filters in all applications and passes the Intent to the application/activity that best matches the Intent and criteria. For more information, see Intents and Intent Filters."
+  },
+  {
+    "question": "What is a Broadcast Receiver?",
+    "answer": "An application class that listens for Intents that are broadcast, rather than being sent to a single target application/activity. The system delivers a broadcast Intent to all interested broadcast receivers, which handle the Intent sequentially."
+  },
+  {
+    "question": "What is a Layout Resource?",
+    "answer": "An XML file that describes the layout of an Activity screen."
+  },
+  {
+    "question": "What is a Manifest File?",
+    "answer": "An XML file that each application must define, to describe the application's package name, version, components (activities, intent filters, services), imported libraries, and describes the various activities, and so on. See The AndroidManifest.xml File for complete information."
+  },
+  {
+    "question": "What is a Nine-patch image?",
+    "answer": "A resizeable bitmap resource that can be used for backgrounds or other images on the device. See Nine-Patch Stretchable Image for more information."
+  },
+  {
+    "question": "What is OpenGL ES?",
+    "answer": "Android provides OpenGL ES libraries that you can use for fast, complex 3D images. It is harder to use than a Canvas object, but better for 3D objects. The android.opengl and javax.microedition.khronos.opengles packages expose OpenGL ES functionality."
+  },
+  {
+    "question": "What are Resources?",
+    "answer": "Nonprogrammatic application components that are external to the compiled application code, but which can be loaded from application code using a well-known reference format. Android supports a variety of resource types, but a typical application's resources would consist of UI strings, UI layout components, graphics or other media files, and so on. An application uses resources to efficiently support localization and varied device profiles and states. For example, an application would include a separate set of resources for each supported local or device type, and it could include layout resources that are specific to the current screen orientation (landscape or portrait). For more information about resources, see Resources and Assets. The resources of an application are always stored in the res/* subfolders of the project."
+  },
+  {
+    "question": "What is a Service?",
+    "answer": "An object of class Service that runs in the background (without any UI presence) to perform various persistent actions, such as playing music or monitoring network activity."
+  },
+  {
+    "question": "What is a Surface?",
+    "answer": "An object of type Surface representing a block of memory that gets composited to the screen. A Surface holds a Canvas object for drawing, and provides various helper methods to draw layers and resize the surface. You should not use this class directly; use SurfaceView instead."
+  },
+  {
+    "question": "What is a SurfaceView?",
+    "answer": "A View object that wraps a Surface for drawing, and exposes methods to specify its size and format dynamically. A SurfaceView provides a way to draw independently of the UI thread for resource-intensive operations (such as games or camera previews), but it uses extra memory as a result. SurfaceView supports both Canvas and OpenGL ES graphics. The base class is SurfaceView."
+  },
+  {
+    "question": "What is a Theme?",
+    "answer": "A set of properties (text size, background color, and so on) bundled together to define various default display settings. Android provides a few standard themes, listed in R.style (starting with 'Theme_')."
+  },
+  {
+    "question": "What are URIs in Android?",
+    "answer": "Android uses URI strings as the basis for requesting data in a content provider (such as to retrieve a list of contacts) and for requesting actions in an Intent (such as opening a Web page in a browser). The URI scheme and format is specialized according to the type of use, and an application can handle specific URI schemes and strings in any way it wants. Some URI schemes are reserved by system components. For example, requests for data from a content provider must use the content://. In an Intent, a URI using an http:// scheme will be handled by the browser."
+  },
+  {
+    "question": "What is a View?",
+    "answer": "An object that draws to a rectangular area on the screen and handles click, keystroke, and other interaction events. A view is a base class for most layout components of an Activity or Dialog screen (text boxes, windows, and so on). It receives calls from its parent object (see ViewGroup) to draw itself, and informs its parent object about where and how big it would like to be (which may or may not be respected by the parent)."
+  },
+  {
+    "question": "What is a View Hierarchy? ",
+    "answer": "An arrangement of View and ViewGroup objects that defines the user interface for each component of an app. The hierarchy consists of view groups that contain one or more child views or view groups. You can obtain a visual representation of a view hierarchy for debugging and optimization by using the Hierarchy Viewer that is supplied with the Android SDK."
+  },
+  {
+    "question": "What is a ViewGroup? ",
+    "answer": "A container object that groups a set of child views. The view group is responsible for deciding where child views are positioned and how large they can be, as well as for calling each to draw itself when appropriate. Some view groups are invisible and are for layout only, while others have an intrinsic UI (for instance, a scrolling list box). View groups are all in the widget package, but extend ViewGroup."
+  },
+  {
+    "question": "What is a Widget?",
+    "answer": "One of a set of fully implemented View subclasses that render form elements and other UI components, such as a text box or popup menu. Because a widget is fully implemented, it handles measuring and drawing itself and responding to screen events. Widgets are all in the android.widget package."
+  },
+  {
+    "question": "What is a Window?",
+    "answer": "In an Android application, an object derived from the abstract class Window that specifies the elements of a generic window, such as the look and feel (title bar text, location and content of menus, and so on). Dialog and Activity use an implementation of this class to render a window. You do not need to implement this class or use windows in your application."
+  }
+]
